@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>O2 Shop</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'open-sans': ['"Open Sans"', 'sans-serif'],
+          },
+          keyframes: {
+            fadeIn: {
+              'from': { opacity: '0' },
+              'to': { opacity: '1' }
+            },
+            popIn: {
+              'from': { transform: 'scale(0.8)' },
+              'to': { transform: 'scale(1)' }
+            }
+          },
+          animation: {
+            fadeIn: 'fadeIn 0.4s ease',
+            popIn: 'popIn 0.4s ease forwards'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-open-sans bg-[url('https://i.pinimg.com/736x/74/d9/b6/74d9b62c4603875276c53e75e7b93cd5.jpg')] bg-cover bg-center text-white leading-relaxed before:content-[''] before:absolute before:inset-0 before:bg-black/40">
+  <!-- Header -->
+  <header class="flex flex-col sm:flex-row justify-between items-center p-4 md:p-8 m-2 md:m-4 rounded-[30px] border-2 border-white/20 bg-transparent backdrop-blur-lg shadow-lg">
+    <div class="text-xl md:text-2xl font-bold mb-4 sm:mb-0">O2&#174;</div>
+    
+    <nav class="w-full sm:w-auto mb-4 sm:mb-0">
+      <ul class="flex flex-wrap justify-center sm:flex-nowrap gap-4 md:gap-8">
+        <li class="font-semibold hover:opacity-80"><a href="#">Moonish</a></li>
+        <li class="font-semibold hover:opacity-80"><a href="#">New in</a></li>
+        <li class="font-semibold hover:opacity-80"><a href="#">Hot drops</a></li>
+        <li class="font-semibold hover:opacity-80"><a href="#">Collection</a></li>
+      </ul>
+    </nav>
+    
+    <div class="flex items-center gap-4">
+      <button class="px-3 md:px-4 py-1.5 md:py-2 border-2 border-white/60 text-white rounded hover:bg-white/20 hover:border-white transition-colors duration-300 font-semibold">🌐</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex flex-col lg:flex-row gap-4 md:gap-8 max-w-7xl mx-auto my-4 md:my-8 p-4 md:p-8 border-2 border-white/20 backdrop-blur-lg shadow-lg rounded-lg relative">
+    <!-- Sneaker Section -->
+    <section class="mt-[100px] md:mt-[150px] basis-full lg:basis-[45%] flex flex-col items-center justify-center text-center">
+      <div>
+        <div class="relative mb-4">
+          <div class="w-[200px] md:w-[250px] h-[240px] md:h-[300px] mx-auto rounded-[20px] bg-gradient-radial from-white/70 to-white/10 overflow-hidden flex items-center justify-center shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+            <img src="https://i.pinimg.com/736x/d4/5e/22/d45e22cda63faac4ef442092bc8e84ea.jpg" alt="shoe" class="w-[220px] md:w-[280px] h-auto relative z-10" />
+          </div>
+        </div>
+        <h2 class="my-3 md:my-4 font-bold text-lg md:text-xl tracking-wide text-shadow">Balenciaga<br/>crocs</h2>
+        <button class="font-semibold px-4 md:px-5 py-2 md:py-2.5 border border-white/40 rounded-full shadow-lg bg-white/20 text-white cursor-pointer transition-colors hover:bg-white/30">add here</button>
+      </div>
+    </section>
+    
+    <!-- Text Panel Section -->
+    <section class="absolute top-0 left-0 w-full z-[1000] flex justify-center items-start pt-4 md:pt-8">
+      <div>
+        <div class="flex justify-end px-4 md:px-0">
+          <h1 class="mt-8 mr-[50px] md:mr-[100px] text-4xl md:text-6xl font-bold text-white/30 scale-y-[2] inline-block">01</h1>
+          <ul class="text-sm md:text-base font-extralight text-white/30">
+            <li>The Late 2020</li>
+            <li>Detail at left chest</li>
+            <li>Zippered mini pockets</li>
+            <li>2 Colors</li>
+            <li>Moonish Design</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hoodie Section -->
+    <section class="mt-[100px] md:mt-[140px]">
+      <div>
+        <div class="relative text-center">
+          <div class="w-full md:w-[750px] h-[300px] md:h-[500px] rounded-[20px] bg-gradient-radial from-white/80 to-white/20 overflow-hidden flex items-center justify-center shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+            <img src="https://i.pinimg.com/736x/b4/6e/bb/b46ebb1582e3eb71c7876c4f7a5eb8aa.jpg" alt="" class="w-full h-full object-cover object-[0_-50px] md:object-[0_-150px]" />
+          </div>
+          <button class="mt-4 md:mt-[30px] md:ml-[600px] px-4 md:px-5 py-2 md:py-2.5 border border-white/40 rounded-full shadow-lg bg-white/20 text-white cursor-pointer transition-colors hover:bg-white/30">
+            add here
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="rounded-[30px] md:rounded-[50px] py-4 md:py-6 px-4 md:px-8 shadow-[0_-2px_4px_rgba(0,0,0,0.1)] mt-4 md:mt-8">
+    <div class="max-w-7xl mx-auto text-center text-gray-800">
+      <h2 class="font-bold text-lg md:text-xl mb-2">NEW &bull; COSMI&#940; SET 23➀</h2>
+      <p class="text-sm md:text-base leading-relaxed">Hot Drop by O2 Studio 2020</p>
+      <p class="text-sm md:text-base leading-relaxed">Moonish Collection</p>
+    </div>
+  </footer>
+
+  <!-- Purchase Modal -->
+  <div id="purchaseModal" class="hidden fixed inset-0 z-[2000] bg-black/60 backdrop-blur-sm justify-center items-center animate-fadeIn">
+    <div class="bg-white/15 border border-white/30 rounded-lg p-8 w-[90%] max-w-[400px] text-white backdrop-blur-lg shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] relative scale-90 animate-popIn">
+      <span class="close absolute top-2 right-4 text-2xl cursor-pointer hover:text-white/70" id="closePurchase">&times;</span>
+      
+      <form  id="purchaseForm" class="space-y-4">
+        <div class="flex flex-col gap-1">
+          <label for="name" class="text-sm font-semibold">Full Name:</label>
+          <input type="text" id="name" required 
+            class="bg-white/10 border border-white/30 rounded-lg px-4 py-2 focus:outline-none focus:border-white/50 transition-colors">
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <label for="email" class="text-sm font-semibold">Email:</label>
+          <input type="email" id="email" required 
+            class="bg-white/10 border border-white/30 rounded-lg px-4 py-2 focus:outline-none focus:border-white/50 transition-colors">
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <label for="address" class="text-sm font-semibold">address</label>
+          <textarea id="address" required rows="3" 
+            class="bg-white/10 border border-white/30 rounded-lg px-4 py-2 focus:outline-none focus:border-white/50 transition-colors"></textarea>
+        </div>
+        <div class="flex flex-col gap-1">
+          <label for="productType" class="text-sm font-semibold">Product Type:</label>
+          <select id="productType" required
+            class="bg-white/10 border border-white/30 rounded-lg px-4 py-2 focus:outline-none focus:border-white/50 transition-colors text-white appearance-none cursor-pointer">
+            <option value="Type A">Cloth</option>
+            <option value="Type B">Shoes</option>
+          </select>
+        </div>
+        
+        <button type="submit" 
+          class="w-full mt-6 px-6 py-3 bg-white/20 border border-white/40 rounded-full font-semibold hover:bg-white/30 transition-colors duration-300">
+          Complete Purchase
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Mark as Purchased Modal -->
+  <div id="markPurchasedModal" class="hidden fixed inset-0 z-[2000] bg-black/60 backdrop-blur-sm justify-center items-center animate-fadeIn">
+    <div class="bg-white/15 border border-white/30 rounded-lg p-8 w-[90%] max-w-[400px] text-white backdrop-blur-lg shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] relative scale-90 animate-popIn">
+      <span class="close absolute top-2 right-4 text-2xl cursor-pointer hover:text-white/70" id="closeMarkPurchased">&times;</span>
+      
+      <div class="text-center space-y-4">
+        <h3 class="text-xl font-bold">Mark as Purchased</h3>
+        <p class="text-sm opacity-80">Are you sure you want to mark this item as purchased?</p>
+        
+        <div class="flex gap-4 justify-center mt-6">
+          <button id="confirmPurchase" 
+            class="px-6 py-2 bg-white/20 border border-white/40 rounded-full font-semibold hover:bg-white/30 transition-colors duration-300">
+            Confirm
+          </button>
+          <button id="cancelPurchase"
+            class="px-6 py-2 bg-transparent border border-white/40 rounded-full font-semibold hover:bg-white/10 transition-colors duration-300">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const purchaseModal = document.getElementById("purchaseModal");   
+    const markPurchasedModal = document.getElementById("markPurchasedModal");
+    const addButtons = document.querySelectorAll("button:not([type='submit'])");
+    const closePurchase = document.getElementById("closePurchase");
+    const closeMarkPurchased = document.getElementById("closeMarkPurchased");
+    const confirmPurchase = document.getElementById("confirmPurchase");
+    const cancelPurchase = document.getElementById("cancelPurchase");
+
+    // Add click event to all "add here" buttons
+    addButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        purchaseModal.style.display = "flex";
+      });
+    });
+
+   
+
+    // Close purchase modal
+    closePurchase.addEventListener("click", () => {
+      purchaseModal.style.display = "none";
+    });
+
+    // Close mark as purchased modal
+    closeMarkPurchased.addEventListener("click", () => {
+      markPurchasedModal.style.display = "none";
+    });
+
+    // Handle confirm purchase
+    confirmPurchase.addEventListener("click", () => {
+      markPurchasedModal.style.display = "none";
+      // Add any additional logic here (e.g., updating UI, sending to backend, etc.)
+    });
+
+    // Handle cancel purchase
+    cancelPurchase.addEventListener("click", () => {
+      markPurchasedModal.style.display = "none";
+    });
+
+    // Close modals when clicking outside
+    window.addEventListener("click", (event) => {
+      if (event.target === purchaseModal) {
+        purchaseModal.style.display = "none";
+      }
+      if (event.target === markPurchasedModal) {
+        markPurchasedModal.style.display = "none";
+      }
+    });
+
+
+
+// Replace both form handlers with this single handler
+  document.getElementById("purchaseForm").addEventListener("submit", (e) => {
+  e.preventDefault();
+  
+  const data = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    address: document.getElementById("address").value,
+    productType: document.getElementById("productType").value
+  };
+
+  // Show loading state
+  const submitButton = e.target.querySelector('button[type="submit"]');
+  const originalText = submitButton.textContent;
+  submitButton.textContent = "กำลังบันทึก...";
+  submitButton.disabled = true;
+
+  google.script.run
+    .withSuccessHandler((result) => {
+      submitButton.textContent = originalText;
+      submitButton.disabled = false;
+      
+      if (result.success) {
+        purchaseModal.style.display = "none";
+        markPurchasedModal.style.display = "flex";
+        // Reset form
+        e.target.reset();
+      } else {
+        alert(result.message);
+      }
+    })
+    .withFailureHandler((error) => {
+      submitButton.textContent = originalText;
+      submitButton.disabled = false;
+      alert("เกิดข้อผิดพลาด: " + error.message);
+    })
+    .saveToSheet(data);
+});
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>
